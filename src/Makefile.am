@@ -10,8 +10,6 @@ endif
 
 #videosnarf_LDFLAGS = -lpcap -L../codec-lib -lG729a -lG7231 -lG726
 
-videosnarf_LDFLAGS = -lpcap
-
 if ARCH_X32
 
 videosnarf_LDADD = ../codec-lib/libG729a.a \

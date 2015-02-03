@@ -31,4 +31,6 @@ case "$host_cpu" in
 	;;
 esac
 
+AC_CHECK_LIB(pcap, pcap_compile, , AC_MSG_ERROR(pcap libary required))
+
 AC_OUTPUT(Makefile src/Makefile)
