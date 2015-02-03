@@ -10,7 +10,7 @@
 
 #define COG711ULAW	0X00
 #define COG711ALAW	0x08
-#define COG722		0x09	
+#define COG722		0x09
 #define COG729		0x12
 #define COG723		0x04
 #define COG726		0x02
@@ -47,7 +47,7 @@ struct MediaStream{
 	u_short previousSequenceNo;
 	/* G722 variables */
         g722_decode_state_t dec_state;
-	
+
 	/* H264 Variable */
 	int fuaStart;
 	int receivedParameterSets;
@@ -59,10 +59,10 @@ struct MediaStream{
 };
 
 
-struct MediaStream * streamHandler(char *, char *, int, int, struct sniff_rtp *, enum CODEC, char); 
-void deleteAllStreams();	
-//extern int initialize_g729_decoder(struct MediaStream *currentMS);
-//extern int decode_payload_g729(struct MediaStream *currentMS, u_char *payload, int size_payload);
+struct MediaStream * streamHandler(char *, char *, int, int, struct sniff_rtp *, enum CODEC, char);
+void deleteAllStreams();
+extern int initialize_g729_decoder(struct MediaStream *currentMS);
+extern int decode_payload_g729(struct MediaStream *currentMS, u_char *payload, int size_payload);
 //extern int initialize_g726_decoder(struct MediaStream *currentMS);
 //extern int decode_payload_g726(struct MediaStream *currentMS, u_char *payload, int size_payload, int sampleSize);
 //int create_wav_header_cpp(FILE *fp, unsigned short, unsigned short, unsigned int, short);

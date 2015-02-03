@@ -1,1 +1,1 @@
-SUBDIRS=src
+SUBDIRS=libbcg729 src
