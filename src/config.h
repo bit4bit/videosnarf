@@ -2,10 +2,13 @@
 /* src/config.h.in.  Generated from configure.in by autoheader.  */
 
 /* compiling under 32bit */
-#define ARCH_X32 1
+/* #undef ARCH_X32 */
 
 /* compiling under 64bit */
-/* #undef ARCH_X64 */
+#define ARCH_X64 1
+
+/* Define to 1 if you have the `pcap' library (-lpcap). */
+#define HAVE_LIBPCAP 1
 
 /* Name of package */
 #define PACKAGE "videosnarf"

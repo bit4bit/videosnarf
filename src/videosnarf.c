@@ -434,7 +434,7 @@ void decode_ip(const u_char *pkt_data, u_char *arg)
 			}
 			else if(ptype == COG729)
 			{
-#ifndef ARCH_X64
+
 				struct MediaStream *currentMS = NULL;
 			    short audio_format = 0;
 		
@@ -462,7 +462,7 @@ void decode_ip(const u_char *pkt_data, u_char *arg)
 				int g729_dret = decode_payload_g729(currentMS, payload, size_payload);
 				if(g729_dret < 0)
 					return;
-#endif
+
 			}
 			else if(ptype == COG723)
 			{

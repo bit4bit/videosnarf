@@ -6,6 +6,9 @@
 /* compiling under 64bit */
 #undef ARCH_X64
 
+/* Define to 1 if you have the `pcap' library (-lpcap). */
+#undef HAVE_LIBPCAP
+
 /* Name of package */
 #undef PACKAGE
 
