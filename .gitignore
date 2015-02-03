@@ -134,3 +134,4 @@ Makefile.in
 **#
 **~
 libbcg729/bcg729
+src/.deps
